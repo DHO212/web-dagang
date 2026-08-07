@@ -26,7 +26,7 @@ export function CartDrawer() {
             <div
                 aria-hidden
                 onClick={closeCart}
-                className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${isOpen
+                className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-500 ease-out-expo ${isOpen
                     ? "opacity-100"
                     : "pointer-events-none opacity-0"
                     }`}
@@ -36,7 +36,7 @@ export function CartDrawer() {
             <aside
                 role="dialog"
                 aria-label="Keranjang belanja"
-                className={`fixed inset-y-0 right-0 z-50 flex w-full max-w-md flex-col bg-white shadow-[0_0_60px_rgba(28,25,23,0.15)] transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed inset-y-0 right-0 z-50 flex w-full max-w-md flex-col bg-white shadow-[0_0_60px_rgba(28,25,23,0.15)] transition-transform duration-700 ease-out-expo ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 {/* Header */}
